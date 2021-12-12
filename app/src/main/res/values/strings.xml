@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Global Education</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="uh_oh">Uh Oh!</string>
+    <string name="check_your_connection">Check Your Connection</string>
+    <string name="you_don_t_seem_to_have_active_internet_connection_please_check_your_connection_and_try_again">You
+        don\'t seem to have active internet connection please check your connection and try again
+    </string>
+    <string name="retry">Retry</string>
+    <string name="default_notification_channel_id">android_default</string>
+    <string name="msg_token_fmt">Token Retrived %1$s</string>
+    <string name="we_are_temporarily_under_maintenance">We are temporarily under maintenance</string>
+    <string name="please_don_t_panic_we_will_be_back_with_some_interesting_things">Please don\'t panic we will be back
+        with some interesting things.
+    </string>
+</resources>

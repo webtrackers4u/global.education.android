@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "715511293051",
+    "project_id": "global-class-tech",
+    "storage_bucket": "global-class-tech.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715511293051:android:ee9f8de44bf5298de4aede",
+        "android_client_info": {
+          "package_name": "in.co.webtrackers.globaleducation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715511293051-silc989t10rekcbf4jcmlg30nl17bjvc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCR9u7zh5Yp741zO0hJREHX8XJ4BWSApE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715511293051-silc989t10rekcbf4jcmlg30nl17bjvc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

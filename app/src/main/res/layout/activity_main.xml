@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <WebView
+            android:id="@+id/main_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:background="@android:color/white"
+                 android:id="@+id/main_internet_error"
+                 android:visibility="gone">
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:padding="60sp">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textAlignment="center"
+                      android:gravity="center_horizontal"
+                      android:textSize="35sp"
+                      android:layout_marginBottom="8sp"
+                      android:text="@string/uh_oh"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textAlignment="center"
+                      android:gravity="center_horizontal"
+                      android:textSize="22sp"
+                      android:text="@string/check_your_connection"/>
+
+            <ImageView android:layout_width="150sp"
+                       android:layout_height="150sp"
+                       android:layout_marginVertical="30sp"
+                       android:src="@drawable/ic_wifi"
+                       android:contentDescription="@string/no_internet_connection"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textAlignment="center"
+                      android:gravity="center_horizontal"
+                      android:textSize="16sp"
+                      android:text="@string/you_don_t_seem_to_have_active_internet_connection_please_check_your_connection_and_try_again"/>
+
+            <LinearLayout android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:padding="10sp"
+                          android:layout_marginTop="25sp"
+                          android:minWidth="100sp"
+                          android:gravity="center"
+                          android:clickable="true"
+                          android:id="@+id/internet_retry_button"
+                          android:background="@drawable/button_background">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="@string/retry"
+                android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:background="#30000000"
+                 android:alpha="0"
+                 android:id="@+id/main_preloader">
+
+        <LinearLayout android:layout_width="60sp"
+                      android:layout_height="60sp"
+                      android:layout_gravity="center"
+                      android:padding="10sp"
+                      android:background="@drawable/preloader_container_background">
+            <ProgressBar android:layout_width="match_parent"
+                         android:layout_height="match_parent"/>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:background="@android:color/white"
+                 android:id="@+id/main_splash">
+
+
+        <LinearLayout android:layout_width="550sp"
+                      android:layout_height="550sp"
+                      android:layout_marginTop="-100sp"
+                      android:layout_marginLeft="-100sp"
+                      android:padding="50sp"
+                      android:background="@drawable/splash_logo_back"
+                      android:orientation="vertical"
+                      android:gravity="center">
+            <ImageView android:layout_width="150sp"
+                       android:src="@mipmap/ic_launcher"
+                       android:id="@+id/splash_logo"
+                       android:layout_height="150sp"
+                       tools:targetApi="lollipop"/>
+        </LinearLayout>
+
+        <ProgressBar android:layout_width="35sp"
+                     android:id="@+id/ajax_loader_image"
+                     android:layout_height="35sp"
+                     tools:targetApi="lollipop"
+                     android:layout_marginBottom="40sp"
+                     android:layout_gravity="bottom|center_horizontal"/>
+
+    </FrameLayout>
+
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:background="@android:color/white"
+                 android:id="@+id/main_inactive_container"
+                 android:visibility="gone">
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:padding="60sp">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textAlignment="center"
+                      android:gravity="center_horizontal"
+                      android:textSize="35sp"
+                      android:layout_marginBottom="8sp"
+                      android:text="@string/uh_oh"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textAlignment="center"
+                      android:gravity="center_horizontal"
+                      android:textSize="22sp"
+                      android:text="@string/we_are_temporarily_under_maintenance"/>
+
+            <ImageView android:layout_width="150sp"
+                       android:layout_height="150sp"
+                       android:layout_marginVertical="30sp"
+                       android:src="@drawable/ic_maintenance"
+                       android:contentDescription="@string/no_internet_connection"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textAlignment="center"
+                      android:gravity="center_horizontal"
+                      android:textSize="16sp"
+                      android:text="@string/please_don_t_panic_we_will_be_back_with_some_interesting_things"/>
+
+            <LinearLayout android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:padding="10sp"
+                          android:layout_marginTop="25sp"
+                          android:minWidth="100sp"
+                          android:gravity="center"
+                          android:clickable="true"
+                          android:id="@id/internet_retry_button"
+                          android:background="@drawable/button_background">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Recheck Now"
+                          android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>

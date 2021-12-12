@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<defaultsMap>
+    <entry>
+        <key>app_url</key>
+        <value>https://globalclasstech.com</value>
+    </entry>
+    <entry>
+        <key>app_status</key>
+        <value>active</value>
+    </entry>
+</defaultsMap>
+

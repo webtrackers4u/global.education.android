@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primary_50">#d8f2ff</color>
+    <color name="primary_100">#b7ddf4</color>
+    <color name="primary_200">#9ac3de</color>
+    <color name="primary_300">#79aac8</color>
+    <color name="primary_400">#6096b6</color>
+    <color name="primary_500">#4583a5</color>
+    <color name="primary_600">#377493</color>
+    <color name="primary_700">#28607c</color>
+    <color name="primary_800">#194c66</color>
+    <color name="primary_900">#01374e</color>
+
+    <color name="complementary_50">#ffe4c9</color>
+    <color name="complementary_100">#f0c2aa</color>
+    <color name="complementary_200">#d19f85</color>
+    <color name="complementary_300">#b17c5f</color>
+    <color name="complementary_400">#996142</color>
+    <color name="complementary_500">#814827</color>
+    <color name="complementary_600">#763f21</color>
+    <color name="complementary_700">#663319</color>
+    <color name="complementary_800">#582613</color>
+    <color name="complementary_900">#481807</color>
+
+    <color name="analogous_1_50">#e1f2f0</color>
+    <color name="analogous_1_100">#b3ded9</color>
+    <color name="analogous_1_200">#83c9c1</color>
+    <color name="analogous_1_300">#55b3a9</color>
+    <color name="analogous_1_400">#35a396</color>
+    <color name="analogous_1_500">#229384</color>
+    <color name="analogous_1_600">#1f8678</color>
+    <color name="analogous_1_700">#1c7668</color>
+    <color name="analogous_1_800">#196659</color>
+    <color name="analogous_1_900">#134a3e</color>
+
+    <color name="analogous_2_50">#e7eaf3</color>
+    <color name="analogous_2_100">#c3c9e1</color>
+    <color name="analogous_2_200">#9ca7cd</color>
+    <color name="analogous_2_300">#7685b9</color>
+    <color name="analogous_2_400">#596aab</color>
+    <color name="analogous_2_500">#3b519e</color>
+    <color name="analogous_2_600">#354a94</color>
+    <color name="analogous_2_700">#2c4089</color>
+    <color name="analogous_2_800">#25367c</color>
+    <color name="analogous_2_900">#192666</color>
+
+    <color name="triadic_1_50">#e9e9f3</color>
+    <color name="triadic_1_100">#c8c7e2</color>
+    <color name="triadic_1_200">#a5a2ce</color>
+    <color name="triadic_1_300">#837eba</color>
+    <color name="triadic_1_400">#6b62ac</color>
+    <color name="triadic_1_500">#56469d</color>
+    <color name="triadic_1_600">#503f94</color>
+    <color name="triadic_1_700">#473588</color>
+    <color name="triadic_1_800">#402b7c</color>
+    <color name="triadic_1_900">#331966</color>
+
+    <color name="triadic_2_50">#f6e3ed</color>
+    <color name="triadic_2_100">#e9b8d3</color>
+    <color name="triadic_2_200">#dd8bb6</color>
+    <color name="triadic_2_300">#d35f99</color>
+    <color name="triadic_2_400">#cc3f83</color>
+    <color name="triadic_2_500">#c81e6e</color>
+    <color name="triadic_2_600">#b71e69</color>
+    <color name="triadic_2_700">#a11d61</color>
+    <color name="triadic_2_800">#8c1c5a</color>
+    <color name="triadic_2_900">#66194c</color>
+</resources>
