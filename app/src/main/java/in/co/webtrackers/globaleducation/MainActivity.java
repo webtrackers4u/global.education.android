@@ -395,7 +395,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void openVideoPlayer(String url){
-
+        Intent intent = new Intent(this,VideoPLayerActivity.class);
+        intent.putExtra("url",url);
+        startActivity(intent);
     }
 
 
