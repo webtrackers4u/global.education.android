@@ -1,5 +1,6 @@
 package `in`.co.webtrackers.globaleducation
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ProgressBar
@@ -14,7 +15,9 @@ import com.google.android.exoplayer2.Timeline
 import com.google.android.exoplayer2.source.ExtractorMediaSource
 import com.google.android.exoplayer2.source.MediaSource
 import android.net.Uri
+import android.os.PowerManager
 import android.view.View
+import android.view.WindowManager
 import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory
 import com.google.android.exoplayer2.upstream.DefaultBandwidthMeter
 import com.google.android.exoplayer2.ExoPlayerFactory
@@ -33,6 +36,7 @@ class VideoPLayerActivity : AppCompatActivity(),Player.EventListener {
     var videoFullScreenPlayer: PlayerView? = null
     var player: SimpleExoPlayer? = null
     var spinnerVideoDetails: ProgressBar? = null
+    var wakeLock: PowerManager.WakeLock? =null;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,7 +48,21 @@ class VideoPLayerActivity : AppCompatActivity(),Player.EventListener {
 
         val url = intent.getStringExtra("url")?:""
         setUp(url)
+        acquireWakeLock();
     }
+
+    private fun acquireWakeLock(){
+        wakeLock =
+            (getSystemService(Context.POWER_SERVICE) as PowerManager).run {
+                newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "GlobalEducation::VideoPlayer").apply {
+                    acquire()
+                }
+            }
+    }
+    private fun releaseWakeLock(){
+        wakeLock?.release();
+    }
+
 
 
     private fun setUp(videoUrl:String) {
@@ -123,6 +141,7 @@ class VideoPLayerActivity : AppCompatActivity(),Player.EventListener {
     override fun onDestroy() {
         super.onDestroy()
         releasePlayer()
+        releaseWakeLock()
     }
 
     override fun onTimelineChanged(timeline: Timeline?, manifest: Any?, reason: Int) {}
